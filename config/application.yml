@@ -1,7 +1,7 @@
 # (!!) Change the secret and RDA private key to your own
 general:
   clientUrl: http://localhost:8080
-  secret: b7zFNUhFYIFLmDSFKFkp0Bnp8Z3uWGnH
+  secret: jbU06QxOnXev0ib7VV6JHLgmU29b6Gg5
   rsaPrivateKey: |
     -----BEGIN RSA PRIVATE KEY-----
     MIIJKAIBAAKCAgEAyMMyCZe+/oihq702T+Yb2qiqgpmSmH9krH5lX5ZlT94KTiIn
@@ -54,3 +54,25 @@ general:
     cdU04pDO6DEYKYcD8vgSlEzVCNqb6TvFfRsfQXI5TSkKuX3fTR2wgLR6CxWIejSE
     32jnWA89Tg9wD6ACZo8On4IIVH4oeFuNi8mSb/M3pQ9hTtqIUqwUw+AxD+I=
     -----END RSA PRIVATE KEY-----
+
+# (!!) Change default password
+database:
+  connectionString: postgresql://postgres:postgres@postgres:5432/engine-wizard
+
+# (!!) Change default password
+s3:
+  url: http://localhost:9000
+  username: minioooo
+  password: minioPasswordddd
+  bucket: engine-wizard
+
+mail:
+  enabled: false
+  name:
+  email:
+  host:
+  port:
+  ssl:
+  authEnabled:
+  username:
+  password:
