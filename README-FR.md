@@ -30,4 +30,3 @@ Nécessite d'avoir arrêté les conteneurs.
 
 Insère les données des Knowledge-Models de ```/kowledge-models``` dans l'instance DSW
 en cours d'exécution.
-
