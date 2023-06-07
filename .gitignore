@@ -1,3 +1,5 @@
 /s3-data/data/
 /db-data/data/
-/knowledge-models/*.km
+/resources/knowledge-models/*.km
+/resources/document-templates/*.zip
+/scripts/test.sh
