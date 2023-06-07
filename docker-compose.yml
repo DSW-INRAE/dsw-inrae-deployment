@@ -10,6 +10,8 @@ services:
       - minio
     volumes:
       - ./config/application.yml:/app/config/application.yml:ro
+    extra_hosts:
+      - localhost:host-gateway
 
   dsw-client:
     image: datastewardshipwizard/wizard-client:3.24.0
@@ -44,3 +46,15 @@ services:
       MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
     volumes:
       - ./s3-data/data:/data
+
+  docworker:
+    image: datastewardshipwizard/document-worker:3.23.0
+    restart: always
+    depends_on:
+      - postgres
+      - minio
+      - dsw-server
+    volumes:
+      - ./config/application.yml:/app/config/application.yml:ro
+    extra_hosts:
+      - localhost:host-gateway
