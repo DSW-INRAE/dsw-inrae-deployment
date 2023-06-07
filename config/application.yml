@@ -62,8 +62,8 @@ database:
 # (!!) Change default password
 s3:
   url: http://localhost:9000
-  username: minioooo
-  password: minioPasswordddd
+  username: minio
+  password: minioPassword
   bucket: engine-wizard
 
 mail:
@@ -76,3 +76,20 @@ mail:
   authEnabled:
   username:
   password:
+
+submission-service:
+  port:
+  dsw:
+    login:
+    password:
+    host:
+    port:
+  could-service:
+  nextcloud:
+    url:
+    login:
+    password:
+    token:
+  security:
+    enabled:
+    tokens:

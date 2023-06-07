@@ -67,12 +67,29 @@ s3:
   bucket: engine-wizard
 
 mail:
-  enabled: false
-  name:
-  email:
+  enabled: true
+  name: DSWMailer
+  email: dsw-inrae@jetest.com
   host:
   port:
   ssl:
   authEnabled:
   username:
   password:
+
+submission-service:
+  port:
+  dsw:
+    login:
+    password:
+    host:
+    port:
+  could-service:
+  nextcloud:
+    url:
+    login:
+    password:
+    token:
+  security:
+    enabled:
+    tokens:
