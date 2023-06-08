@@ -14,27 +14,27 @@ The only parameters to be configured for the deployment are located in [`/env`](
 
 The scripts should be executed from `/script`.
 
-### `load-env.sh`
+### [`load-env.sh`](scripts/load-env.sh)
 
 Replaces the keys in all files located in `/templates` with the corresponding values specified in `/.env`. The output files retain the same directory structure as in the original folder starting from the root.
 
 This script must be executed before any other script.
 
-### `compose.sh`
+### [`compose.sh`](scripts/compose.sh)
 
 Starts (or restarts) the containers.
 
-### `stop.sh`
+### [`stop.sh`](scripts/stop.sh)
 
 Stops the containers.
 
-### `clean.sh`
+### [`clean.sh`](scripts/clean.sh)
 
 Empties the storage services (PostgreSQL database and MinIO).
 
 Requires the containers to be stopped.
 
-### `insert.sh`
+### [`insert.sh`](scripts/insert.sh)
 
 Inserts the data from the Knowledge Models and templates in `/resources` into the running DSW instance.
 
