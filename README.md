@@ -8,7 +8,7 @@ It is recommended to be familiar with DSW before preparing the deployment.
 
 ## Environment Variables
 
-The only parameters to be configured for the deployment are located in [`/env`](.env).
+The only parameters to be configured for the deployment are located in [`/.env`](.env).
 
 ## Scripts
 
